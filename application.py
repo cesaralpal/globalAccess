@@ -1,8 +1,21 @@
 from flask import Flask
-app = Flask(__name__)
+from flask_restful import Resource,Api,request
 
-@app.route("/")
+app = Flask(__name__)
+api = Api(app)
+
+class sigfox(Resource):
+   def get(self):
+      args = request.args
+      return args
+
+
+api.add_resource(sigfox,'/sigfox')
+
+
+""" @app.route("/")
 def hello():
-    return "Hello World!"
+    return "Hello, Global Access!" """
+
 if __name__ == '__application__':
-    app.run(host='localhost', port=5000, debug=True)
+    app.run(debug=True, host='127.0.0.1', port=5000)
