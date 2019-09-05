@@ -16,6 +16,3 @@ api.add_resource(sigfox,'/sigfox')
 """ @app.route("/")
 def hello():
     return "Hello, Global Access!" """
-
-if __name__ == '__application__':
-    app.run(debug=True, host='https://globalaccesssk.azurewebsites.net', port=5000)
