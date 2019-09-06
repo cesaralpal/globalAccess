@@ -11,8 +11,7 @@ class sigfox(Resource):
 
 
 api.add_resource(sigfox,'/sigfox')
-
-
+app.run()
 """ @app.route("/")
 def hello():
     return "Hello, Global Access!" """
