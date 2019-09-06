@@ -11,6 +11,8 @@ class sigfox(Resource):
 
 
 api.add_resource(sigfox,'/sigfox')
+if __name__ == "__application__":
+   app.run()
 
 
 """ @app.route("/")
