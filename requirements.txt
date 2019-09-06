@@ -1,6 +1,5 @@
 Flask
 Flask-RESTful
 Flask-SQLAlchemy
-setuptools==0.7.3
 Werkzeug==0.12.2
 uwsgi
